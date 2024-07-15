@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    @media screen {
+        @font-face {
+            font-family: 'Nespresso Lucas';
+            src: url("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.woff2") format("woff2");
+            src: url("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Regular/NespressoLucas-Regular.woff") format("woff");
+            font-weight: normal;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'Nespresso Lucas Light';
+            src: url("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Light/NespressoLucas-Light.woff2") format("woff2");
+            src: url("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/Light/NespressoLucas-Light.woff") format("woff");
+            font-weight: normal;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'Nespresso Lucas XtraBd';
+            src: url("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/XtraBd/NespressoLucas-XtraBd.woff2") format("woff2");
+            src: url("http://www.nespresso.com/emailing/NespressoVisuals/common/fonts/XtraBd/NespressoLucas-XtraBd.woff") format("woff");
+            font-weight: bold;
+        }
+    }
+
+    div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+    }
+
+    html {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #fbfaf8;
+        color: #3F4053;
+    }
+
+    *[class].btn-1 {
+        border-radius: 25px;
+        padding: 10px 20px;
+        background-color: #44546a;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 15px;
+        line-height: 1.5;
+        font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif;
+        font-style: normal;
+        text-align: center;
+        font-weight: 400;
+        text-decoration: none;
+        min-width: 190px;
+        -webkit-text-size-adjust: none;
+    }
+
+    .ReadMsgBody {
+        width: 100%;
+    }
+
+    body,
+    table,
+    span,
+    div {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+
+    table {
+        border-spacing: 0;
+        font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif;
+        color: #5a5a5a;
+    }
+
+    td {
+        padding: 0;
+    }
+
+    img {
+        border: 0;
+    }
+
+    *[class="trackingpixel"] {
+        display: none !important;
+    }
+
+    .appleLink a,
+    .appleLink {
+        color: #323232 !important;
+        text-decoration: none !important;
+    }
+
+    .appleLinkGrey a,
+    .appleLinkGrey {
+        color: #35303e !important;
+        text-decoration: none !important;
+    }
+
+    .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+
+    .webkit {
+        max-width: 600px;
+    }
+
+    .outer {
+        Margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .contents {
+        width: 100%;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .owaContextualHighlight span {
+        border: none !important;
+        color: inherit !important;
+    }
+
+    [data-outlook-cycle] [x-apple-data-detectors-type="calendar-event"] {
+        color: inherit !important;
+        -webkit-text-decoration-color: inherit !important;
+        text-decoration-color: inherit !important;
+        text-decoration: none !important;
+    }
+
+    @media only screen and (max-width: 640px) {
+        .desktop {
+            display: none !important;
+        }
+
+        .mobile {
+            display: block !important;
+            overflow: visible !important;
+            visibility: visible !important;
+            max-height: none !important;
+        }
+
+        .headline-17 {
+            min-height: 0vw !important;
+            font-size: calc(11px + 1vw) !important;
+            line-height: calc(21px + 1vw) !important;
+        }
+
+        .headline-24 {
+            min-height: 0vw !important;
+            font-size: calc(18px + 1vw) !important;
+            line-height: calc(28px + 1vw) !important;
+        }
+
+        .headline-40 {
+            min-height: 0vw !important;
+            font-size: calc(36px + 1vw) !important;
+            line-height: calc(44px + 1vw) !important;
+        }
+
+        .copytext-15 {
+            min-height: 0vw !important;
+            font-size: calc(10px + 1vw) !important;
+            line-height: calc(18px + 1vw) !important;
+        }
+
+        .copytext-13 {
+            min-height: 0vw !important;
+            font-size: calc(9px + 1vw) !important;
+            line-height: calc(14px + 1vw) !important;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: auto !important;
+        }
+
+        .footnote-12 {
+            min-height: 0vw !important;
+            font-size: calc(8px + 1vw) !important;
+            line-height: calc(14px + 1vw) !important;
+        }
+
+        .footnote-10 {
+            min-height: 0vw !important;
+            font-size: calc(6px + 1vw) !important;
+            line-height: calc(12px + 1vw) !important;
+        }
+
+        .footerlinks-14 {
+            min-height: 0vw !important;
+            font-size: calc(9px + 1vw) !important;
+            line-height: calc(17px + 1vw) !important;
+        }
+
+        .p-l-r,
+        .p-l-r {
+            padding: 0 15px 0 15px;
+        }
+
+        .p-l-r25,
+        .p-l-r25 {
+            padding: 0 25px 0 25px;
+        }
+
+        .p-l-r5,
+        .p-l-r5 {
+            padding: 0 5px 0 0px;
+        }
+
+        .p-l-r10,
+        .p-l-r10 {
+            padding: 0 10px 0 0px;
+        }
+
+        .hidden,
+        .hidden {
+            display: none;
+        }
+
+        .responsive-img {
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .mobile-text-right p {
+            text-align: right !important;
+        }
+
+        .two-column.products .column {
+            max-width: 100% !important;
+        }
+
+        *[class].block,
+        .block {
+            width: 100% !important;
+            text-align: center !important;
+            display: block !important;
+            margin: 0 auto !important;
+        }
+
+        *[class].txt-center,
+        .txt-center {
+            text-align: center !important;
+        }
+
+        .two-column.stack .column {
+            max-width: 100% !important;
+        }
+
+        .full-screen {
+            max-width: 600px !important;
+        }
+
+        *[class].flexible-content,
+        .flexible-content {
+            width: 100% !important;
+        }
+
+        *[class].block-txt,
+        .block-txt {
+            text-align: center !important;
+            display: block !important;
+            margin: 0 auto !important;
+        }
+
+        *[class].txt-center td,
+        .txt-center td {
+            text-align: center !important;
+        }
+
+        *[class].txt-center td table,
+        .txt-center td table {
+            text-align: center !important;
+            margin: 0 auto;
+        }
+
+        *[class].h62,
+        .h62 {
+            height: 62px !important;
+        }
+
+        *[class].fs9,
+        .fs9 {
+            font-size: 9px !important;
+            font-weight: bold;
+        }
+
+        *[class].fs11,
+        .fs11 {
+            font-size: 11px !important;
+            font-weight: 400;
+        }
+
+        *[class].fs18,
+        .fs18 {
+            font-size: 18px !important;
+            font-weight: bold;
+        }
+
+        *[class].fs22,
+        .fs22 {
+            font-size: 22px !important;
+            font-weight: bold;
+        }
+
+        *[class].fs15,
+        .fs15 {
+            font-size: 15px !important;
+            font-weight: normal;
+        }
+
+        *[class].fs45,
+        .fs45 {
+            font-size: 45px !important;
+            font-weight: normal;
+        }
+
+        *[class].fs9,
+        .fs9 {
+            font-size: 9px !important;
+            font-weight: normal;
+        }
+
+        *[class].height30,
+        .height30 {
+            height: 30px;
+        }
+
+        *[class].height10,
+        .height10 {
+            height: 10px;
+        }
+
+        *[class].paddingleft0,
+        .paddingleft0 {
+            padding-left: 0px !important;
+        }
+
+        *[class].paddingright0,
+        .paddingright0 {
+            padding-right: 0px !important;
+        }
+
+        *[class].paddingtop0,
+        .paddingtop0 {
+            padding-top: 0px !important;
+        }
+
+        *[class].paddingtop10,
+        .paddingtop10 {
+            padding-top: 10px !important;
+        }
+
+        *[class].paddingtop15,
+        .paddingtop15 {
+            padding-top: 15px !important;
+        }
+
+        *[class].btn {
+            font-size: 12px !important;
+        }
+    }
+
+    img+div {
+        display: none;
+    }
+
+    div+a,
+    div+span+a {
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+</style>
+
+<body>
+    <center class="wrapper" style="text-align: center; width: 100%;">
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"
+            style="padding: 0;margin:0 auto;max-width:640px;width:100%;background-color: #ffffff !important;font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif;"
+            align="center ">
+            <tr>
+                <td height="13"></td>
+            </tr>
+            <tr>
+                <td class="fs11" align="center" valign="middle"
+                    style="font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif; color: #b4b4b4;">
+                    <span>View this email <span style="text-decoration: underline; ;">online</span></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td height="13"></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
+                        class="flexible-content">
+                        <tr>
+                            <td align="left" width="18"></td>
+                            <td width="604" height="1" style="background-color: #e5e5e5;"></td>
+                            <td align="left" width="18"></td>
+
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+            <!-- <tr>
+
+                <td height="1" style="background-color: #b4b4b4;"></td>
+
+            </tr> -->
+            <tr>
+                <td height="35"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./images/logo.jpg">
+                </td>
+            </tr>
+            <tr>
+                <td height="35"></td>
+            </tr>
+            <tr>
+                <td class="fs11">
+                    <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                        align="center" width="100%"
+                        style="font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif;;">
+                        <tr>
+                            <td align="left" border="0" width="130" valign="top"></td>
+                            <td width="50">
+                                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0"
+                                    border="0" align="center" width="100%">
+                                    <tr>
+                                        <td align="center">
+                                            <a href="#" style="text-decoration: none; color: #000000; ">Coffee</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="left" border="0" width="60" valign="top"></td>
+                            <td width="50">
+                                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0"
+                                    border="0" align="center" width="100%">
+                                    <tr>
+                                        <td>
+                                            <a href="#" style="text-decoration: none ; color: #000000;">Machines</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="left" border="0" width="60" valign="top"></td>
+                            <td width="50">
+                                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0"
+                                    border="0" align="center" width="100%">
+                                    <tr>
+                                        <td>
+                                            <a href="#" style="text-decoration: none; color: #000000;">Recycling</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="left" border="0" width="60" valign="top"></td>
+                            <td width="50">
+                                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0"
+                                    border="0" align="center" width="100%">
+                                    <tr>
+                                        <td>
+                                            <a href="#" style="text-decoration: none; color: #000000;">Login</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="left" border="0" width="130"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+            <tr>
+                <td height="25"></td>
+            </tr>
+            <td align="center" valign="top" align="center" valign="top">
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                        <td align="center" valign="top">
+                            <img style="display: block;" src="./images/banner.png" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            </tr>
+
+            <tr>
+                <td align="center" valign="top">
+                    <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                        align="center" width="100%">
+                        <tr>
+                            <td height="45"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0"
+                                    border="0" align="center" width="100%">
+
+                                    <tr>
+                                        <td align="left" width="165" style="max-width: 165px;"></td>
+                                        <td width="310" align="center" valign="top">
+                                            <h1 class="fs18" style=" color: #000000;margin: 0;">
+                                                YOU
+                                                SKILLHAVE TIME TO MAKE HER DAY</h1>
+                                        </td>
+                                        <td align="left" width="165" style="max-width: 165px;"></td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                        <tr>
+                            <td height="30"></td>
+                        </tr>
+                        <td>
+                            <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0"
+                                border="0" align="center" width="100%">
+
+                                <tr>
+                                    <td align="left" width="155"></td>
+
+                                    <td align="center" valign="top" width="330">
+                                        <p
+                                            style="font-size: 15px; color: #000000; font-weight: 700; margin: 0; font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif;">
+                                            The perfect Mother’s Day present is waiting for you.</p>
+                                    </td>
+                                    <td align="left" width="155"></td>
+
+                                </tr>
+
+                            </table>
+                        </td>
+            </tr>
+
+            <tr>
+            <tr>
+                <td height="30"></td>
+            </tr>
+            <td>
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+
+                    <tr>
+                        <td width="80" align="left" ;></td>
+                        <td align="center" valign="top" width="480">
+                            <p
+                                style="font-size: 15px; color: #000000; font-weight: 700; margin: 0; font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif;; ">
+                                Don’t miss our special deals for the occasion and offer her the gift of
+                                everyday indulgence with beautiful coffee moments.</p>
+                        </td>
+                        <td align="left" width="80"></td>
+                    </tr>
+
+                </table>
+            </td>
+            </tr>
+            <tr>
+                <td height="35"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                        align="center" width="100%">
+
+                        <tr>
+                            <td align="center" valign="top">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"
+                                    width="100%" style="margin: 0 auto; max-width: 205px;">
+                                    <tr>
+                                        <td class="fs15" align="center" valign="top"
+                                            style="color: #000000; background-color: #d6c3b3; margin: 0; font-weight: 400; font-size: 17px; padding: 10px 50px;">
+                                            <a href="#">BUY A GIFT</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        </td>
+        </tr>
+
+
+
+
+
+
+
+
+
+        <tr>
+            <td>
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                    <tr>
+                        <td height="70"></td>
+                    </tr>
+                    <td>
+                        <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                            align="center" width="100%">
+
+                            <tr>
+                                <td align="center" valign="top">
+                                    <h1 class="fs18" style="font-size: 24px; color: #000000;margin: 0;">
+                                        THE GIFT OF SPECIAL MOMENTS</h1>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+        </tr>
+
+        <tr>
+        <tr>
+            <td height="30"></td>
+        </tr>
+        <td>
+            <img style="display: block;" src="./images/mid-banner.png">
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                        <td height="30"></td>
+                    </tr>
+                    <tr>
+                        <td align="left" width="140"></td>
+                        <td align="center" valign="top" width="360">
+                            <p
+                                style="font-size: 15px; color: #000000; font-weight: 700; margin: 0; font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif;;">
+                                What’s more indulgent than coffee and breakfast in bed? </p>
+                        </td>
+                        <td align="left" width="140"></td>
+
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+        <tr>
+            <td height="30"></td>
+        </tr>
+        <td>
+            <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                align="center" width="100%">
+
+                <tr>
+                    <td width="80" align="left" ;></td>
+                    <td align="center" valign="top" width="480">
+                        <p
+                            style="font-size: 15px; color: #000000; margin: 0; font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif; font-weight: 700; ">
+                            Give your beloved Mum the gift of luxury with our <strong>2 View cups, free with
+                                every order.</strong>
+                            .</p>
+                    </td>
+                    <td align="left" width="80"></td>
+                </tr>
+
+            </table>
+        </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                        <td height="35"></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"
+                                width="100%" style="margin: 0 auto; max-width: 205px;">
+                                <tr>
+                                    <td class="fs15" align="center" valign="top"
+                                        style="color: #000000; background-color: #ffffff; margin: 0; font-weight: 400; font-size: 17px; padding: 12px 30px; border: 1px solid black;">
+                                        <a href="#">REDEEM OFFER</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <tr>
+            <td>
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                    <tr>
+                        <td height="70"></td>
+                    </tr>
+                    <td>
+                        <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                            align="center" width="100%">
+
+                            <tr>
+                                <td align="left"></td>
+                                <td align="center" valign="top">
+                                    <h1 class="fs18" style="font-size: 24px; color: #000000;margin: 0;">
+                                        AS UNIQUE AS SHE IS</h1>
+                                </td>
+                                <td align="left"></td>
+                            </tr>
+
+                        </table>
+                    </td>
+        </tr>
+
+        <tr>
+        <tr>
+            <td height="35"></td>
+        </tr>
+        <td>
+            <img style="display: block;" src="./images/botttom-banner.png">
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                        <td height="25"></td>
+                    </tr>
+                    <tr>
+                        <td align="left" width="140"></td>
+                        <td align="center" valign="top" width="360">
+                            <p
+                                style="font-size: 15px; color: #000000; font-weight: 700; margin: 0; font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif;;">
+                                Our Coffee Specialists know that every Mum is special. </p>
+                        </td>
+                        <td align="left" width="140"></td>
+
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+        <tr>
+            <td height="30"></td>
+        </tr>
+        <td>
+            <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                align="center" width="100%">
+
+                <tr>
+                    <td width="80" align="left" ;></td>
+                    <td align="center" valign="top" width="480">
+                        <p
+                            style="font-size: 15px; color: #000000; margin: 0; font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif; font-weight: 700; ">
+                            Visit a Nespresso Boutique and get the personal touch you need to make her feel
+                            amazing
+                            this Mother’s Day.
+                    </td>
+                    <td align="left" width="80"></td>
+                </tr>
+
+            </table>
+        </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                        <td height="35"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">
+                            <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0"
+                                border="0" align="center" width="100%" style="margin: 0 auto; max-width: 300px;">
+                                <tr>
+                                    <td class="fs15" align="center" valign="top"
+                                        style="color: #000000; background-color: #ffffff; margin: 0; font-weight: 400; font-size: 17px; padding: 12px 60px; border: 1px solid black;">
+                                        <a href="#">FIND A BOUTIQUE</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="50"></td>
+        </tr>
+        <tr>
+            <td height="1" style="background-color: #e3e3e3;"></td>
+        </tr>
+
+        <tr>
+        <tr>
+            <td height="50"></td>
+        </tr>
+        <td>
+            <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                align="center" width="100%">
+
+                <tr>
+                    <td width="70" align="left" ;></td>
+
+                    <td align="center" valign="top" width="500">
+                        <p
+                            style="margin: 0 auto; font-size: 16px; font-family: 'Nespresso Lucas', Helvetica, Trebuchet, Arial, sans-serif; color: #000000;">
+                            By end of 2022, all Original and Vertuo capsules will be made
+                            using at least 80% recycled
+                            aluminum</p>
+                    </td>
+                    <td width="70" align="left" ;></td>
+
+                </tr>
+            </table>
+        </td>
+        </tr>
+
+        <tr>
+        <tr>
+            <td height="25"></td>
+        </tr>
+        <td>
+            <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                align="center" width="100%">
+                <tr>
+                    <td width="230" align="left"></td>
+                    <td align="center" valign="top" width="180">
+                        <img src="./images/whatelse.png" alt="">
+                    </td>
+                    <td width="230" align="left"></td>
+
+                </tr>
+            </table>
+        </td>
+        </tr>
+        <tr>
+            <td height="40"></td>
+        </tr>
+        <tr>
+            <td height="1" style="background-color: #e5e5e5;"></td>
+        </tr>
+
+        <tr>
+        <tr>
+            <td height="20"></td>
+        </tr>
+        <td>
+            <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                align="center" width="100%">
+                <tr>
+                    <td align="left" width="20"></td>
+                    <td align="left" valign="top" width="585" style="padding-right: 5px;">
+                        <p style="margin: 0; font-size: 15px; font-weight:400; text-align: left;">ORDER YOUR
+                            CAPSULES</p>
+                    </td>
+
+                    <td align="left" width="15">
+                        <img style="min-width: 11px ;" width="11" src="./images/arrow.png">
+                    </td>
+                    <td align="left" width="20"></td>
+                </tr>
+
+            </table>
+            <tr>
+                <td height="20"></td>
+            </tr>
+            <tr>
+            <tr>
+                <td height="1" style="background-color: #e5e5e5;"></td>
+            </tr>
+            <tr>
+                <td height="20"></td>
+            </tr>
+        <td>
+            <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                align="center" width="100%">
+                <tr>
+                    <td align="left" width="20"></td>
+                    <td align="left" valign="top" width="585" style="padding-right: 5px;">
+                        <p style="margin: 0; font-size: 15px; font-weight:400; text-align: left;">ORDER YOUR
+                            ACCESSORIES</p>
+                    </td>
+
+                    <td align="left" width="15">
+                        <img style="min-width: 11px;" width="11" src="./images/arrow.png">
+                    </td>
+                    <td align="left" width="20"></td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+
+
+        <tr>
+            <td height="20"></td>
+        </tr>
+        <tr>
+        <tr>
+            <td height="1" style="background-color: #e5e5e5;"></td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+        </tr>
+        <td>
+            <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                align="center" width="100%">
+                <tr>
+                    <td align="left" width="20"></td>
+                    <td align="left" valign="top" width="585" style="padding-right: 10px;">
+                        <p style="margin: 0; font-size: 15px; font-weight:400; text-align: left;">DISCOVER OUR RECYCLING
+                            SOLUTIONS</p>
+                    </td>
+
+                    <td align="left" width="15">
+                        <img style="min-width: 11px ;" width="11" src="./images/arrow.png">
+                    </td>
+                    <td align="left" width="20"></td>
+                </tr>
+            </table>
+        </td>
+        </tr>
+        <tr>
+            <td height="20"></td>
+        </tr>
+        <tr>
+        <tr>
+            <td height="1" style="background-color: #e5e5e5;"></td>
+        </tr>
+        <tr>
+            <td height="35"></td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+
+                        <td align="center">
+                            <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0"
+                                border="0" align="center" width="470">
+                                <tr>
+                                    <td width="20"></td>
+                                    <td align="left" width="300">
+                                        <p style="margin: 0;" class="fs12">Share your #Nespressomoments
+                                        </p>
+                                    </td>
+
+
+                                    <td align="center" width="45">
+                                        <img style="max-width: 22px;" src="./images/fb.jpg">
+                                    </td>
+
+
+                                    <td align="center" width="35" style="padding-left: 20px;">
+                                        <img style="max-width: 22px;" src="./images/twitter.jpg">
+                                    </td>
+
+
+                                    <td align="center" width="35" style="padding-left: 20px;">
+                                        <img style="max-width: 22px;" src="./images/youtube.jpg">
+                                    </td>
+
+
+
+                                    <td align="center" width="20" style="padding-left: 20px;">
+                                        <img style="max-width: 22px;" src="./images/insta.jpg">
+                                    </td>
+                                    <td width="20"></td>
+
+                                </tr>
+                            </table>
+                        </td>
+
+                    </tr>
+                </table>
+
+        </tr>
+        </table>
+        </td>
+        </tr>
+        <tr>
+            <td height="35"></td>
+        </tr>
+        <tr>
+            <td height="1" style="background-color: #e5e5e5;"></td>
+        </tr>
+        <tr>
+            <td height="35"></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                        <td align="left" width="45" valign="top" class="hidden"></td>
+                        <td width="90" align="center" class="block">
+                            <img src="./images/van.jpg">
+                            <p
+                                style="margin: 0; line-height: 22px; font-size: 12px; color: #231f20; padding-top: 20px;">
+                                Find out about
+                                our delivery services</p>
+                        </td>
+                        <td align="left" width="70" valign="top" class="hidden" </td>
+                        <td width="70" align="center" class="block">
+                            <img src="./images/lock.jpg">
+                            <p style="margin: 0; line-height: 22px; font-size: 12px;color: #231f20; padding-top: 20px;">
+                                Shop online safely</p>
+                        </td>
+                        <td align="left" width="70" valign="top" class="hidden"></td>
+                        <td width="80" align="center" class="block">
+                            <img src="./images/recycle.jpg">
+                            <p
+                                style="margin: 0; line-height: 22px; font-size: 12px; color: #231f20; padding-top: 20px;">
+                                Recycle your use capsules</p>
+                        </td>
+                        <td align="left" width="70" valign="top" class="hidden"></td>
+                        <td width="100" align="center" class="block">
+                            <img src="./images/call.jpg">
+                            <p
+                                style="margin: 0; line-height: 22px; font-size: 12px; color: #231f20; padding-top: 20px;">
+                                (+961) 5 953 700
+                                for any advice</p>
+                        </td>
+                        <td align="left" width="45" valign="top" class="block"></td>
+
+
+                    </tr>
+                </table>
+            </td>
+
+        <tr>
+            <td height="20"></td>
+        </tr>
+        <tr>
+            <td height="1" style="background-color: #e5e5e5;"></td>
+        </tr>
+        <tr>
+
+            <td height="20"></td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                        <td width="170"></td>
+                        <td width="300" align="center" style="line-height: 22px;">
+                            <p style="font-size: 11px; color: #a7a7a7; margin: 0;">*Terms & conditions
+                                apply.</p>
+                            <p style="font-size: 11px; color: #a7a7a7; margin: 0;">
+                                This offer is valid from March 20th until March 21st, 2022.
+                            </p>
+                        </td>
+                        <td width="170"></td>
+                    </tr>
+                </table>
+            </td>
+        <tr>
+            <td height="20"></td>
+        </tr>
+        <tr>
+            <td height="1" style="background-color: #e5e5e5;"></td>
+        </tr>
+        <tr>
+            <td height="40"></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <table class="flexible-content" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                        <td width="80"></td>
+                        <td align="center" width="480">
+                            <p style="margin: 0; font-size: 13px; color: #a7a7a7;"> You have received this email as a
+                                part of your <strong style="color: black;"> Nespresso</strong> Club membership. If you
+                                would
+                                like
+                                to no longer receive our special offers and exclusive updates, click here to unsubscribe
+                            </p>
+                    <tr>
+                        <td height="8"></td>
+                    </tr>
+                    <p style="margin: 0; font-size: 13px; color: #a7a7a7;">
+                        If you wish to ask a question to your <strong style="color: black;"> Nespresso
+                        </strong>Club, please contact <strong style="color: black;"> (+961) 5 953 700</strong>
+                    </p>
+            </td>
+            <td width="80"></td>
+
+        </tr>
+        </table>
+        </td>
+        </tr>
+        </tr>
+
+        <tr>
+            <td height="40"></td>
+        </tr>
+        </tr>
+
+        </table>
+    </center>
+</body>
+
+</html>
